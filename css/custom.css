@@ -1,0 +1,209 @@
+html {
+  font-family: Lora;  
+}
+h1, h2, h3, h4, h5, h6,
+.title-font {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.logo {
+  width: 75%;
+}
+ul.menu {
+
+}
+ul.menu li {
+  margin-bottom: 10px;
+}
+ul.menu li a {
+  color: #000;
+}
+ul.menu li a:hover {
+  border-bottom: 2px solid black;
+}
+blockquote.top-text {
+  text-align: justify;
+  border-left-color: #ccc;
+  position: relative;
+}
+blockquote.top-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+
+  -webkit-transition: height 7s ease;
+    -moz-transition: height 7s ease;
+    -o-transition: height 7s ease;
+    transition: height 7s ease;
+}
+blockquote.top-text.light-border::before {
+  height: 0%;
+}
+/* for flip box */
+.flipbox {
+  position: relative;
+}
+.flipbox .front {
+  height: inherit;
+/* Ninh: disable for the wrapper catches the box's height
+  position: absolute;
+  top: 0;*/
+  z-index: 900;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+     -moz-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+  -webkit-transition: all .8s ease-in-out;
+     -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+     -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+}
+.flipbox .back {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  -webkit-transform: rotateY(-180deg);
+     -moz-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+  -webkit-transition: all .8s ease-in-out;
+     -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+     -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+}
+.flipbox.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.flipbox.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.flipbox img {
+  width: 100%;
+}
+blockquote.thin-border {
+  border-left-width: 2px;
+  border-left-color: #333;
+  text-align: justify;
+}
+img.bike {
+  width: 100%;
+}
+ul.options li {
+  display: inline-block;
+  margin: 0 15px;
+  text-align: center;
+}
+ul.options li b {
+  font-size: 16px;  
+}
+ul.options img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+div.city-icons img {
+  display: inline-block;  
+  width: 100px;
+  margin: 5px;
+}
+div.countdown {
+  font-size: 28px;
+  vertical-align: middle;
+}
+div.countdown small {
+  font-size: 60%;
+  opacity: 0.9;
+  vertical-align: middle;  
+}
+h6.countdown-title {
+  /*border: 2px solid #000;*/
+  padding: 5px 10px;
+  display: inline-block;  
+}
+a {
+  color: #000;
+}
+a.more,
+a:hover {
+  text-decoration: underline;
+}
+a.button {
+  border: 2px solid #000;
+  padding: 7px 21px;
+}
+.no-mg-top {
+  margin-top: 0;
+}
+.no-mg-bot {
+  margin-bottom: 0;
+}
+.space {
+  float: left;
+  display: block;
+  width: 100%
+}
+.space.v10 {
+  margin-bottom: 10px;
+}
+.space.v20 {
+  margin-bottom: 20px;
+}
+.space.v30 {
+  margin-bottom: 30px;
+}
+.space.v40 {
+  margin-bottom: 40px;
+}
+.space.v50 {
+  margin-bottom: 50px;
+}
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+input[type=text]:focus:not([readonly])+label {
+  color: #000;
+}
+.dropdown-content li>a, 
+.dropdown-content li>span {
+  color: #000;
+}
+
+[type="radio"].with-gap:checked+label:before,
+[type="radio"].with-gap:checked+label:after {
+  border-color: #000;
+}
+[type="radio"].with-gap:checked+label:after {
+  background-color: #000;
+}
+[type="checkbox"]:checked+label:before {
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+.top-link {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: #888;
+}
+.top-link:hover {
+  color: #000;
+}

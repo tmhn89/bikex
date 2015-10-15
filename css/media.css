@@ -1,0 +1,49 @@
+@media only screen and (max-width : 600px) {
+  .non-mobile {
+    display: none;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    zoom: 75%;
+  }
+  .row.no-mg-bot-on-small {
+    margin-bottom: 0!important;
+  }
+  #fp-nav { 
+    display: none; 
+  }
+  ul.menu li {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  ul.menu li:after {
+    content: '|';
+    margin-left: 3px;
+    display: inline-block;    
+  }
+  ul.options li {
+    margin: 0 7px;
+  }
+  div.countdown {
+    font-size: 20px;
+  }
+  div.city-icons img {
+    width: 75px;
+    margin: 2px;
+  }  
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (min-width : 601px) {
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+}
+
+@media only screen and (min-width : 993px) {
+
+}
